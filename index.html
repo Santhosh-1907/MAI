@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MAI – Construction & Property Improvement</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Tailwind compiled CSS -->
+    <link rel="stylesheet" href="./public/css/tailwind.css" />
+    <!-- SCSS compiled CSS -->
+    <link rel="stylesheet" href="./public/css/main.css" />
+
+    <!-- Optional: Inter font via system-safe stack, or add a local font-face -->
+  </head>
+  <body class="bg-slate-50 text-slate-900 font-sans">
+    <div class="min-h-screen flex flex-col">
+
+      
+
+      <!-- Header / Nav -->
+      <header class="site-header text-white">
+  <!-- TOP BLUE BAR -->
+<div class="site-header__top">
+  <div
+    class="site-header__top-inner max-w-6xl mx-auto px-6 flex items-center justify-between gap-8"
+  >
+    <!-- LEFT: Logo -->
+    <div class="flex items-center gap-2">
+  <img
+    src="public/images/logo1.png"
+    alt="MAI Logo"
+    class="site-header__logo-img"
+  />
+</div>
+
+    <!-- CENTER: Help pill with hover-expand CTA -->
+    <div class="flex justify-center grow">
+      <div class="help-pill">
+        <span class="help-pill__text">
+          Need help? We’re here for you
+        </span>
+
+        <!-- Left: Book a Demo (video icon) -->
+<button type="button" class="help-pill__cta">
+  <span class="help-pill__cta-inner">
+    <span class="help-pill__cta-icon">🎥</span>
+    <span class="help-pill__cta-label">Book a Demo</span>
+  </span>
+</button>
+
+<!-- Right: Contact Us (phone icon) -->
+<button type="button" class="help-pill__contact">
+  <span class="help-pill__contact-inner">
+    <span class="help-pill__contact-icon">☎</span>
+    <span class="help-pill__contact-label">Contact Us</span>
+  </span>
+</button>
+
+      </div>
+    </div>
+
+    <!-- RIGHT: Sign in -->
+    <div class="flex items-center">
+      <button class="sign-in-pill">
+        <span class="sign-in-pill__icon">👤</span>
+        <span>Sign In</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Bottom nav row -->
+  <div class="site-header__bottom">
+    <div
+      class="site-header__bottom-inner max-w-6xl mx-auto px-6 flex items-center justify-between"
+    >
+      <!-- LEFT: Nav -->
+      <nav class="site-header__nav">
+        <a href="#" class="site-nav-link">HOME</a>
+        <a href="#" class="site-nav-link">How it Works</a>
+        <a href="#" class="site-nav-link">Project</a>
+        <a href="#" class="site-nav-link">Blogs</a>
+        <a href="#" class="site-nav-link">DIY Worktops</a>
+      </nav>
+
+      <!-- RIGHT: CTAs -->
+      <div class="site-header__ctas">
+        <button class="header-cta-main">
+          <span class="header-cta-main__icon">＋</span>
+          <span>POST PROJECT</span>
+        </button>
+
+        <span class="header-cta-divider"></span>
+
+        <button class="header-cta-plain">
+          <span class="header-cta-plain__icon">▶</span>
+          <span>SEND PROPOSALS</span>
+        </button>
+
+        <span class="header-cta-divider"></span>
+
+        <button class="header-cta-plain">
+          <span class="header-cta-plain__icon">💼</span>
+          <span>APPLY INTERNSHIP</span>
+        </button>
+
+        <span class="header-cta-divider"></span>
+
+        <button class="header-cart">
+          🛒
+        </button>
+      </div>
+    </div>
+  </div>
+
+</header>
+
+
+     <!-- HERO SLIDER -->
+<section class="hero">
+  <!-- Slides (background images) -->
+  <div class="hero__slides">
+    <img
+      src="public/images/hero1.jpeg"
+      alt="Hero slide 1"
+      class="hero__slide hero__slide--1"
+    />
+    <img
+      src="public/images/hero2.jpeg"
+      alt="Hero slide 2"
+      class="hero__slide hero__slide--2"
+    />
+    <img
+      src="public/images/hero3.jpeg"
+      alt="Hero slide 3"
+      class="hero__slide hero__slide--3"
+    />
+    <img
+      src="public/images/hero4.jpeg"
+      alt="Hero slide 4"
+      class="hero__slide hero__slide--4"
+    />
+  </div>
+
+  <!-- Dark gradient overlay -->
+  <div class="hero__overlay"></div>
+
+  <!-- Content (always on top of slides) -->
+  <div
+    class="hero__inner max-w-6xl mx-auto px-6 py-16 lg:py-20 grid gap-10 lg:grid-cols-2 items-center relative z-10"
+  >
+    <!-- LEFT: Text + buttons -->
+    <!-- LEFT: Text + buttons -->
+<div class="hero__content space-y-6">
+  <h1
+    class="hero__heading text-3xl sm:text-4xl lg:text-[2.6rem] font-semibold leading-tight"
+  >
+    Connect With Highly-Rated<br />
+    Professionals Near You.
+  </h1>
+  <p class="hero__sub max-w-lg text-sm leading-relaxed">
+    Get matched with trusted traders at the right price in less time. MAI
+    brings traders, project owners, and interns onto one smart platform for
+    smoother construction projects.
+  </p>
+
+  <div class="hero__actions flex flex-wrap items-center">
+    <button class="hero-btn hero-btn--primary">
+      <span class="hero-btn__icon hero-btn__icon--primary">🎥</span>
+      <span>Book a Demo</span>
+    </button>
+    <button class="hero-btn hero-btn--secondary">
+      <span class="hero-btn__icon hero-btn__icon--secondary">☎</span>
+      <span>Contact Us</span>
+    </button>
+  </div>
+</div>
+
+
+    <!-- RIGHT: empty column, just keeps layout similar to Figma -->
+    <div class="hidden lg:block"></div>
+  </div>
+
+  <!-- Bottom-right thumbnail slider -->
+  <div class="hero-thumbs">
+    <div class="hero-thumbs__slides">
+      <img
+        src="public/images/hero1.jpeg"
+        alt="Thumb 1"
+        class="hero-thumbs__slide hero-thumbs__slide--1"
+      />
+      <img
+        src="public/images/hero2.jpeg"
+        alt="Thumb 2"
+        class="hero-thumbs__slide hero-thumbs__slide--2"
+      />
+      <img
+        src="public/images/hero3.jpeg"
+        alt="Thumb 3"
+        class="hero-thumbs__slide hero-thumbs__slide--3"
+      />
+      <img
+        src="public/images/hero4.jpeg"
+        alt="Thumb 4"
+        class="hero-thumbs__slide hero-thumbs__slide--4"
+      />
+    </div>
+  </div>
+</section>
+
+
+<!-- End to End Home Service -->
+<section class="section section--light services">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="services__header flex items-center justify-between gap-4 mb-6">
+      <h2 class="services__title">End to End Home Service</h2>
+      <button class="btn-outline-primary services__view-all">View All Services</button>
+    </div>
+
+    <div class="services-grid">
+      <!-- first 7 cards stay in the grid -->
+      <article class="service-card">
+        <img src="public/images/service1.jpeg" alt="Carpenter" class="service-card__img" />
+        <div class="service-card__label">Carpenter</div>
+      </article>
+
+      <article class="service-card">
+        <img src="public/images/service2.jpeg" alt="Painting" class="service-card__img" />
+        <div class="service-card__label">Painting</div>
+      </article>
+
+      <article class="service-card">
+        <img src="public/images/service3.jpeg" alt="Guttering" class="service-card__img" />
+        <div class="service-card__label">Guttering</div>
+      </article>
+
+      <article class="service-card">
+        <img src="public/images/service4.jpeg" alt="Locksmith" class="service-card__img" />
+        <div class="service-card__label">Locksmith</div>
+      </article>
+
+      <article class="service-card">
+        <img src="public/images/service4.jpeg" alt="Door Fitting" class="service-card__img" />
+        <div class="service-card__label">Door Fitting</div>
+      </article>
+
+      <article class="service-card">
+        <img src="public/images/service5.jpeg" alt="Wall Cladding" class="service-card__img" />
+        <div class="service-card__label">Wall Cladding</div>
+      </article>
+
+      <article class="service-card">
+        <img src="public/images/service6.jpeg" alt="Electrical" class="service-card__img" />
+        <div class="service-card__label">Electrical</div>
+      </article>
+
+      <!-- LAST 3: these will “drop” into the stats stack -->
+      <article class="service-card service-card--stack">
+        <img src="public/images/service7.jpeg" alt="Roofing" class="service-card__img" />
+        <div class="service-card__label">Roofing</div>
+      </article>
+
+      <article class="service-card service-card--stack">
+        <img src="public/images/service8.jpeg" alt="Gas Works" class="service-card__img" />
+        <div class="service-card__label">Gas Works</div>
+      </article>
+
+      <article class="service-card service-card--stack">
+        <img src="public/images/service9.jpeg" alt="Guttering" class="service-card__img" />
+        <div class="service-card__label">Guttering</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Real Stats -->
+<section class="section section--light services-stats">
+  <div class="max-w-6xl mx-auto px-6 stats-layout">
+    <!-- LEFT: Text -->
+    <div class="stats-text">
+      <h3 class="stats-title">The Real Stats Behind UK Home Services</h3>
+      <p class="stats-copy">
+        Over 32% of homeowners say hiring a trustworthy professional is harder
+        than the actual renovation. Around 1 in 4 projects in the UK either get
+        delayed or dropped completely just because people can’t find the right
+        help. We built this platform to finally close the gap between people who
+        need home or commercial services and the experts who can actually get
+        the job done.
+      </p>
+    </div>
+
+    <!-- RIGHT: 3 stacked images -->
+    <div class="services-stats__images">
+      <div class="stats-card stats-card--back">
+        <img src="public/images/service7.jpeg" alt="Home 1" class="stats-card__img" />
+      </div>
+      <div class="stats-card stats-card--middle">
+        <img src="public/images/service8.jpeg" alt="Home 2" class="stats-card__img" />
+      </div>
+      <div class="stats-card stats-card--front">
+        <img src="public/images/service9.jpeg" alt="Home 3" class="stats-card__img" />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+      <!-- MAI Leading Innovation in Construction & Property Improvement -->
+<section class="section section--light roles">
+  <div class="max-w-4xl mx-auto px-6 text-center roles__intro">
+    <h2 class="roles__title">
+      MAI Leading Innovation in Construction &amp; Property Improvement
+    </h2>
+    <p class="roles__copy">
+      MAI stands at the forefront of innovation in construction and property improvement,
+      hosting a wide range of projects — from painting and furnishing to bathroom upscaling,
+      kitchen remodelling, stone worktop installations, and more.
+    </p>
+  </div>
+
+  <div class="roles__strip max-w-6xl mx-auto px-6">
+    <!-- TRADER -->
+    <article class="role-card role-card--trader">
+      <div class="role-card__inner">
+
+        <div class="role-card__icons">
+  <img src="public/images/helmet.png" alt="" class="role-icon role-icon--helmet" />
+  <img src="public/images/tool.png" alt="" class="role-icon role-icon--tools" />
+</div>
+        <!-- vertical label (collapsed state) -->
+        <div class="role-card__label role-card__label--vertical">
+          Trader
+        </div>
+
+        <!-- full content (expanded state) -->
+        <div class="role-card__content">
+          <h3 class="role-card__heading">Trader</h3>
+          <div class="role-card__panel">
+            <p class="role-card__text">
+              Register now to find trusted home services and verified traders for free
+              online. With MAI, you get full project transparency from start to finish.
+              Use advanced filters to make faster, smarter decisions.
+            </p>
+          </div>
+          <div class="role-card__actions">
+            <button class="role-btn role-btn--primary">View All Trader</button>
+            <button class="role-btn role-btn--ghost">How It Works</button>
+          </div>
+        </div>
+
+        <img
+          src="public/images/image1.png"
+          alt="Trader"
+          class="role-card__person"
+        />
+      </div>
+    </article>
+
+    <!-- PROJECT OWNER -->
+    <article class="role-card role-card--owner">
+      <div class="role-card__inner">
+
+        <div class="role-card__icons">
+  <img src="public/images/helmet.png" alt="" class="role-icon role-icon--helmet" />
+  <img src="public/images/tool.png" alt="" class="role-icon role-icon--tools" />
+</div>
+        <div class="role-card__label role-card__label--vertical">
+          Project Owner
+        </div>
+
+        <div class="role-card__content">
+          <h3 class="role-card__heading">Project Owner</h3>
+          <div class="role-card__panel">
+            <p class="role-card__text">
+              Register now to find trusted home services and verified traders for free
+              online. With MAI, you get full project transparency from start to finish.
+              Manage quotes, approvals, and project timelines in one smart workspace.
+            </p>
+          </div>
+          <div class="role-card__actions">
+            <button class="role-btn role-btn--primary">
+              View All Project Owners
+            </button>
+            <button class="role-btn role-btn--ghost">How It Works</button>
+          </div>
+        </div>
+
+        <img
+          src="public/images/image2.png"
+          alt="Project Owner"
+          class="role-card__person"
+        />
+      </div>
+    </article>
+
+    <!-- INTERN -->
+    <article class="role-card role-card--intern">
+      <div class="role-card__inner">
+        <div class="role-card__icons">
+  <img src="public/images/helmet.png" alt="" class="role-icon role-icon--helmet" />
+  <img src="public/images/tools.png" alt="" class="role-icon role-icon--tools" />
+</div>
+        <div class="role-card__label role-card__label--vertical">
+          Intern
+        </div>
+
+        <div class="role-card__content">
+          <h3 class="role-card__heading">Intern</h3>
+          <div class="role-card__panel">
+            <p class="role-card__text">
+              Register now to find trusted home services and verified traders for free
+              online. With MAI, you get full project transparency from start to finish.
+              Discover real projects, gain hands-on experience, and build your portfolio.
+            </p>
+          </div>
+          <div class="role-card__actions">
+            <button class="role-btn role-btn--primary">View All Intern</button>
+            <button class="role-btn role-btn--ghost">How It Works</button>
+          </div>
+        </div>
+
+        <img
+          src="public/images/image3.png"
+          alt="Intern"
+          class="role-card__person"
+        />
+      </div>
+    </article>
+  </div>
+</section>
+
+
+      
+
+    <!-- Traders - Why Traders Choose MAI -->
+    <section class="traders">
+    <!-- header is centered but not restricted by container -->
+    <div class="traders__header-wrap">
+        <header class="traders__header">
+        <h2 class="traders__title">
+            Traders - Why Traders Choose MAI
+            <span class="traders__info" aria-label="More info">?</span>
+        </h2>
+        <p class="traders__copy">
+            MAI upholds high standards by thoroughly vetting all Traders, ensuring only top
+            professionals are featured. Traders enjoy consistent inquiries, effective communication,
+            and tools to enhance credibility and showcase their work. With MAI, they expand client
+            base and manage Projects efficiently.
+        </p>
+        </header>
+    </div>
+
+    <div class="traders-carousel">
+        <div class="traders-window">
+        <div class="traders-track">
+            <!-- Card 1 -->
+            <article class="trader-card">
+            <div class="trader-card__img-wrap">
+                <img src="public/images/trader4.png" alt="Robert Fox" class="trader-card__img" />
+            </div>
+            <div class="trader-card__body">
+                <h3 class="trader-card__name">Robert Fox</h3>
+                <p class="trader-card__location">Birmingham</p>
+            </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="trader-card">
+            <div class="trader-card__img-wrap">
+                <img src="public/images/trader5.png" alt="Marvin McKinney" class="trader-card__img" />
+            </div>
+            <div class="trader-card__body">
+                <h3 class="trader-card__name">Marvin McKinney</h3>
+                <p class="trader-card__location">Greater London</p>
+            </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="trader-card">
+            <div class="trader-card__img-wrap">
+                <img src="public/images/trader6.png" alt="Guy Hawkins" class="trader-card__img" />
+            </div>
+            <div class="trader-card__body">
+                <h3 class="trader-card__name">Guy Hawkins</h3>
+                <p class="trader-card__location">Birmingham</p>
+            </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="trader-card">
+            <div class="trader-card__img-wrap">
+                <img src="public/images/trader5.png" alt="Jane Cooper" class="trader-card__img" />
+            </div>
+            <div class="trader-card__body">
+                <h3 class="trader-card__name">Jane Cooper</h3>
+                <p class="trader-card__location">Greater London</p>
+            </div>
+            </article>
+
+            <!-- Card 5 -->
+            <article class="trader-card">
+            <div class="trader-card__img-wrap">
+                <img src="public/images/trader6.png" alt="Ronald Richards" class="trader-card__img" />
+            </div>
+            <div class="trader-card__body">
+                <h3 class="trader-card__name">Ronald Richards</h3>
+                <p class="trader-card__location">Birmingham</p>
+            </div>
+            </article>
+        </div>
+        </div>
+
+        <!-- arrows -->
+        <div class="traders-controls">
+        <button class="traders-arrow traders-arrow--prev" type="button" aria-label="Previous trader">
+            ‹
+        </button>
+        <button class="traders-arrow traders-arrow--next" type="button" aria-label="Next trader">
+            ›
+        </button>
+        </div>
+
+        <!-- view all button -->
+        <div class="traders__cta">
+        <button class="traders__view-all">View All Trader</button>
+        </div>
+    </div>
+    </section>
+
+
+
+
+<!-- Blog Section -->
+
+<section class="blog">
+  <div class="blog__container">
+    <header class="blog__header">
+      <div class="blog__intro">
+        <h2 class="blog__title">Latest BLOG</h2>
+        <p class="blog__copy">
+          Explore MAI’s expert blogs for valuable insights, practical tips, and the latest
+          industry updates. Our articles cover a range of topics to help you stay informed
+          and make informed decisions. Dive into expert advice and stay ahead in the
+          industry with our engaging and informative content.
+        </p>
+      </div>
+
+      <button class="blog__view-all">View All Blogs</button>
+    </header>
+
+    <div class="blog-grid">
+      <!-- TOP ROW (3 large cards) -->
+      <article class="blog-card blog-card--large">
+        <div class="blog-card__image">
+          <img src="public/images/blog1.png" alt="Cozy living room" />
+          <div class="blog-card__overlay">
+            <h3 class="blog-card__title">Soft ambient lighting ideas</h3>
+            <p class="blog-card__meta">Interior Design · London</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="blog-card blog-card--small">
+        <div class="blog-card__image">
+          <img src="public/images/blog2.png" alt="Modern open office" />
+          <div class="blog-card__overlay">
+            <h3 class="blog-card__title">Open-plan spaces that work</h3>
+            <p class="blog-card__meta">Workspace · Manchester</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="blog-card blog-card--large">
+        <div class="blog-card__image">
+          <img src="public/images/blog3.png" alt="Warm dining area" />
+          <div class="blog-card__overlay">
+            <h3 class="blog-card__title">Warm tones for dining rooms</h3>
+            <p class="blog-card__meta">Home Styling · Birmingham</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- BOTTOM ROW (small, large, small) -->
+      <article class="blog-card blog-card--small">
+        <div class="blog-card__image">
+          <img src="public/images/blog4.png" alt="Bathroom with blue accents" />
+          <div class="blog-card__overlay">
+            <h3 class="blog-card__title">Spa-like bathrooms at home</h3>
+            <p class="blog-card__meta">Renovation · Bristol</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="blog-card">
+  <div class="blog-card__image">
+    <img src="public/images/blog5.png" alt="Kitchen and living room" />
+    <div class="blog-card__overlay">
+      <h3 class="blog-card__title">Viola Marble bathroom ledge</h3>
+      <p class="blog-card__meta">
+        £50 – £200 · Greater Manchester – England
+      </p>
+    </div>
+  </div>
+</article>
+
+
+      <article class="blog-card blog-card--small">
+        <div class="blog-card__image">
+          <img src="public/images/blog6.png" alt="Indoor plants and decor" />
+          <div class="blog-card__overlay">
+            <h3 class="blog-card__title">Biophilic design with plants</h3>
+            <p class="blog-card__meta">Sustainability · Leeds</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+      <!-- Footer -->
+<footer class="footer">
+  <div class="footer__inner">
+    <!-- TOP ROW -->
+    <div class="footer__top">
+      <!-- logo -->
+      <div class="footer__brand">
+        <img
+          src="public/images/logo.png"
+          alt="MAI Logo"
+          class="footer__logo"
+        />
+      </div>
+
+      <!-- nav -->
+      <nav class="footer__nav">
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Careers</a>
+        <a href="#">FAQ</a>
+        <a href="#">CSR</a>
+        <a href="#">Terms &amp; Conditions</a>
+        <a href="#">Privacy Policy</a>
+      </nav>
+
+      <!-- social -->
+      <!-- social -->
+<div class="footer__social">
+  <!-- Facebook -->
+  <button class="social-circle" aria-label="Facebook">
+    <svg
+      class="social-icon"
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+    >
+      <path
+        d="M22 12.07C22 6.52 17.52 2 12 2S2 6.52 2 12.07C2 17.1 5.66 21.3 10.44 22v-6.99H8.08v-2.94h2.36V9.84c0-2.34 1.4-3.63 3.54-3.63 1.03 0 2.11.18 2.11.18v2.33h-1.19c-1.17 0-1.54.73-1.54 1.48v1.78h2.63l-.42 2.94h-2.21V22C18.34 21.3 22 17.1 22 12.07Z"
+        fill="currentColor"
+      />
+    </svg>
+  </button>
+
+  <!-- Twitter / X -->
+  <button class="social-circle" aria-label="Twitter">
+    <svg
+      class="social-icon"
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+    >
+      <path
+        d="M18.9 3H21l-4.58 5.24L21.5 21h-3l-3.57-7.7L9.5 21h-3l4.83-5.76L3 3h3.12l3.2 6.96L18.9 3Z"
+        fill="currentColor"
+      />
+    </svg>
+  </button>
+
+  <!-- LinkedIn -->
+  <button class="social-circle" aria-label="LinkedIn">
+    <svg
+      class="social-icon"
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+    >
+      <path
+        d="M4.98 3.5C4.98 4.6 4.1 5.5 3 5.5S1 4.6 1 3.5 1.9 1.5 3 1.5s1.98.9 1.98 2ZM2 8h2V21H2V8Zm6.5 0h1.9v1.77h.03c.26-.5 1.02-1.77 3-1.77 3.2 0 3.8 2.1 3.8 4.8V21h-2v-7c0-1.67-.03-3.81-2.32-3.81-2.32 0-2.68 1.82-2.68 3.69V21h-2V8Z"
+        fill="currentColor"
+      />
+    </svg>
+  </button>
+</div>
+
+    </div>
+
+    <!-- divider line -->
+    <hr class="footer__divider" />
+
+    <!-- BOTTOM ROW -->
+    <div class="footer__bottom">
+      <p class="footer__address">
+        MAI Corporation Ltd, 1 De La Warr Way Cambourne, Cambridge, CB23 6DX
+      </p>
+      <p class="footer__copy">
+        © Copyright MAI Corporation Ltd. All Rights Reserved
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+
+
+    <script>
+ document.addEventListener("DOMContentLoaded", function () {
+    const statsSection = document.querySelector(".services-stats");
+    if (!statsSection) return;
+
+    const root = document.documentElement;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // when the stats block is in view
+            root.classList.add("stats-active");
+          } else {
+            // when you scroll back up, revert state
+            root.classList.remove("stats-active");
+          }
+        });
+      },
+      {
+        threshold: 0.35, // adjust how much needs to be visible before triggering
+      }
+    );
+
+    observer.observe(statsSection);
+  });
+
+
+  
+  (function () {
+    const track = document.querySelector(".traders-track");
+    if (!track) return;
+
+    const prevBtn = document.querySelector(".traders-arrow--prev");
+    const nextBtn = document.querySelector(".traders-arrow--next");
+
+    let isAnimating = false;
+
+    function getStep() {
+      const firstCard = track.children[0];
+      if (!firstCard) return 0;
+      const styles = window.getComputedStyle(firstCard);
+      const width = firstCard.offsetWidth;
+      const gap = parseFloat(styles.marginRight || "0");
+      return width + gap;
+    }
+
+    function slideNext() {
+      if (isAnimating) return;
+      const step = getStep();
+      if (!step) return;
+
+      isAnimating = true;
+      track.style.transition = "transform 0.45s cubic-bezier(0.23, 0.66, 0.23, 0.99)";
+      track.style.transform = `translateX(-${step}px)`;
+
+      const onEnd = () => {
+        track.style.transition = "none";
+        track.appendChild(track.firstElementChild);
+        track.style.transform = "translateX(0)";
+        requestAnimationFrame(() => {
+          track.style.transition = "transform 0.45s cubic-bezier(0.23, 0.66, 0.23, 0.99)";
+        });
+        isAnimating = false;
+        track.removeEventListener("transitionend", onEnd);
+      };
+
+      track.addEventListener("transitionend", onEnd);
+    }
+
+    function slidePrev() {
+      if (isAnimating) return;
+      const step = getStep();
+      if (!step) return;
+
+      isAnimating = true;
+      // move last card to the front first
+      track.style.transition = "none";
+      track.insertBefore(track.lastElementChild, track.firstElementChild);
+      track.style.transform = `translateX(-${step}px)`;
+
+      requestAnimationFrame(() => {
+        track.style.transition = "transform 0.45s cubic-bezier(0.23, 0.66, 0.23, 0.99)";
+        track.style.transform = "translateX(0)";
+      });
+
+      const onEnd = () => {
+        isAnimating = false;
+        track.removeEventListener("transitionend", onEnd);
+      };
+      track.addEventListener("transitionend", onEnd);
+    }
+
+    nextBtn?.addEventListener("click", slideNext);
+    prevBtn?.addEventListener("click", slidePrev);
+
+    // (Optional) keyboard support
+    track.setAttribute("tabindex", "-1");
+    track.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowRight") slideNext();
+      if (e.key === "ArrowLeft") slidePrev();
+    });
+  })();
+
+
+</script>
+
+  </body>
+</html>

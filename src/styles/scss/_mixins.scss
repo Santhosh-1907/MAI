@@ -1,0 +1,32 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin hover-lift($scale: 1.02) {
+  transition: transform $dur-normal $ease-smooth, box-shadow $dur-normal $ease-smooth;
+  will-change: transform, box-shadow;
+
+  &:hover {
+    transform: translateY(-4px) scale($scale);
+    box-shadow: $shadow-card;
+  }
+}
+
+@mixin btn-base {
+  @include flex-center;
+  padding: 0.65rem 1.5rem;
+  border-radius: $radius-pill;
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition:
+    background-color $dur-fast $ease-smooth,
+    color $dur-fast $ease-smooth,
+    border-color $dur-fast $ease-smooth,
+    box-shadow $dur-fast $ease-smooth,
+    transform $dur-fast $ease-smooth;
+  white-space: nowrap;
+}
