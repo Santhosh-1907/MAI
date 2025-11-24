@@ -44,11 +44,6 @@
   animation: float-slow 6s ease-in-out infinite;
 }
 
-.help-bar {
-  background: linear-gradient(90deg, #022743, #003a66);
-  font-size: 0.7rem;
-}
-
 /* ===========================
    HEADER LAYOUT
    =========================== */

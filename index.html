@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./public/css/tailwind.css" />
     <!-- SCSS compiled CSS -->
     <link rel="stylesheet" href="./public/css/main.css" />
+    <link rel="stylesheet" href="./dist/output.css" />
+
 
     <!-- Optional: Inter font via system-safe stack, or add a local font-face -->
   </head>
@@ -27,9 +29,10 @@
     <!-- LEFT: Logo -->
     <div class="flex items-center gap-2">
   <img
-    src="public/images/logo1.png"
+    src="public/images/logo1.webp"
     alt="MAI Logo"
     class="site-header__logo-img"
+    loading="lazy"
   />
 </div>
 
@@ -122,24 +125,28 @@
   <!-- Slides (background images) -->
   <div class="hero__slides">
     <img
-      src="public/images/hero1.jpeg"
+      src="public/images/hero1.webp"
       alt="Hero slide 1"
       class="hero__slide hero__slide--1"
+      loading="lazy"
     />
     <img
-      src="public/images/hero2.jpeg"
+      src="public/images/hero2.webp"
       alt="Hero slide 2"
       class="hero__slide hero__slide--2"
+      loading="lazy"
     />
     <img
-      src="public/images/hero3.jpeg"
+      src="public/images/hero3.webp"
       alt="Hero slide 3"
       class="hero__slide hero__slide--3"
+      loading="lazy"
     />
     <img
-      src="public/images/hero4.jpeg"
+      src="public/images/hero4.webp"
       alt="Hero slide 4"
       class="hero__slide hero__slide--4"
+      loading="lazy"
     />
   </div>
 
@@ -186,24 +193,28 @@
   <div class="hero-thumbs">
     <div class="hero-thumbs__slides">
       <img
-        src="public/images/hero1.jpeg"
+        src="public/images/hero1.webp"
         alt="Thumb 1"
         class="hero-thumbs__slide hero-thumbs__slide--1"
+        loading="lazy"
       />
       <img
-        src="public/images/hero2.jpeg"
+        src="public/images/hero2.webp"
         alt="Thumb 2"
         class="hero-thumbs__slide hero-thumbs__slide--2"
+        loading="lazy"
       />
       <img
-        src="public/images/hero3.jpeg"
+        src="public/images/hero3.webp"
         alt="Thumb 3"
         class="hero-thumbs__slide hero-thumbs__slide--3"
+        loading="lazy"
       />
       <img
-        src="public/images/hero4.jpeg"
+        src="public/images/hero4.webp"
         alt="Thumb 4"
         class="hero-thumbs__slide hero-thumbs__slide--4"
+        loading="lazy"
       />
     </div>
   </div>
@@ -221,53 +232,53 @@
     <div class="services-grid">
       <!-- first 7 cards stay in the grid -->
       <article class="service-card">
-        <img src="public/images/service1.jpeg" alt="Carpenter" class="service-card__img" />
+        <img src="public/images/service1.webp" alt="Carpenter" class="service-card__img" loading="lazy" />
         <div class="service-card__label">Carpenter</div>
       </article>
 
       <article class="service-card">
-        <img src="public/images/service2.jpeg" alt="Painting" class="service-card__img" />
+        <img src="public/images/service2.webp" alt="Painting" class="service-card__img" loading="lazy" />
         <div class="service-card__label">Painting</div>
       </article>
 
       <article class="service-card">
-        <img src="public/images/service3.jpeg" alt="Guttering" class="service-card__img" />
+        <img src="public/images/service3.webp" alt="Guttering" class="service-card__img" loading="lazy" />
         <div class="service-card__label">Guttering</div>
       </article>
 
       <article class="service-card">
-        <img src="public/images/service4.jpeg" alt="Locksmith" class="service-card__img" />
+        <img src="public/images/service4.webp" alt="Locksmith" class="service-card__img" loading="lazy" />
         <div class="service-card__label">Locksmith</div>
       </article>
 
       <article class="service-card">
-        <img src="public/images/service4.jpeg" alt="Door Fitting" class="service-card__img" />
+        <img src="public/images/service4.webp" alt="Door Fitting" class="service-card__img" loading="lazy" />
         <div class="service-card__label">Door Fitting</div>
       </article>
 
       <article class="service-card">
-        <img src="public/images/service5.jpeg" alt="Wall Cladding" class="service-card__img" />
+        <img src="public/images/service5.webp" alt="Wall Cladding" class="service-card__img" loading="lazy"/>
         <div class="service-card__label">Wall Cladding</div>
       </article>
 
       <article class="service-card">
-        <img src="public/images/service6.jpeg" alt="Electrical" class="service-card__img" />
+        <img src="public/images/service6.webp" alt="Electrical" class="service-card__img" loading="lazy" />
         <div class="service-card__label">Electrical</div>
       </article>
 
       <!-- LAST 3: these will “drop” into the stats stack -->
       <article class="service-card service-card--stack">
-        <img src="public/images/service7.jpeg" alt="Roofing" class="service-card__img" />
+        <img src="public/images/service7.webp" alt="Roofing" class="service-card__img" loading="lazy"/>
         <div class="service-card__label">Roofing</div>
       </article>
 
       <article class="service-card service-card--stack">
-        <img src="public/images/service8.jpeg" alt="Gas Works" class="service-card__img" />
+        <img src="public/images/service8.webp" alt="Gas Works" class="service-card__img" loading="lazy"/>
         <div class="service-card__label">Gas Works</div>
       </article>
 
       <article class="service-card service-card--stack">
-        <img src="public/images/service9.jpeg" alt="Guttering" class="service-card__img" />
+        <img src="public/images/service9.webp" alt="Guttering" class="service-card__img" loading="lazy"/>
         <div class="service-card__label">Guttering</div>
       </article>
     </div>
@@ -293,13 +304,13 @@
     <!-- RIGHT: 3 stacked images -->
     <div class="services-stats__images">
       <div class="stats-card stats-card--back">
-        <img src="public/images/service7.jpeg" alt="Home 1" class="stats-card__img" />
+        <img src="public/images/service7.webp" alt="Home 1" class="stats-card__img" loading="lazy"/>
       </div>
       <div class="stats-card stats-card--middle">
-        <img src="public/images/service8.jpeg" alt="Home 2" class="stats-card__img" />
+        <img src="public/images/service8.webp" alt="Home 2" class="stats-card__img" loading="lazy" />
       </div>
       <div class="stats-card stats-card--front">
-        <img src="public/images/service9.jpeg" alt="Home 3" class="stats-card__img" />
+        <img src="public/images/service9.webp" alt="Home 3" class="stats-card__img" loading="lazy" />
       </div>
     </div>
   </div>
@@ -328,8 +339,8 @@
       <div class="role-card__inner">
 
         <div class="role-card__icons">
-  <img src="public/images/gear1.png" alt="" class="role-icon role-icon--helmet" />
-  <img src="public/images/clipboard.png" alt="" class="role-icon role-icon--tools" />
+  <img src="public/images/gear1.webp" alt="" class="role-icon role-icon--helmet" loading="lazy" />
+  <img src="public/images/clipboard.webp" alt="" class="role-icon role-icon--tools" loading="lazy" />
 </div>
         <!-- vertical label (collapsed state) -->
         <div class="role-card__label role-card__label--vertical">
@@ -353,9 +364,10 @@
         </div>
 
         <img
-          src="public/images/image1.png"
+          src="public/images/image1.webp"
           alt="Trader"
           class="role-card__person"
+          loading="lazy"
         />
       </div>
     </article>
@@ -365,8 +377,8 @@
       <div class="role-card__inner">
 
         <div class="role-card__icons">
-  <img src="public/images/arrow.png" alt="" class="role-icon role-icon--helmet" />
-  <img src="public/images/construction2.png" alt="" class="role-icon role-icon--tools" />
+  <img src="public/images/arrow.webp" alt="" class="role-icon role-icon--helmet" loading="lazy"/>
+  <img src="public/images/construction2.webp" alt="" class="role-icon role-icon--tools" loading="lazy"/>
 </div>
         <div class="role-card__label role-card__label--vertical">
           Project Owner
@@ -390,9 +402,10 @@
         </div>
 
         <img
-          src="public/images/image2.png"
+          src="public/images/image2.webp"
           alt="Project Owner"
           class="role-card__person"
+          loading="lazy"
         />
       </div>
     </article>
@@ -401,8 +414,8 @@
     <article class="role-card role-card--intern">
       <div class="role-card__inner">
         <div class="role-card__icons">
-  <img src="public/images/helmet.png" alt="" class="role-icon role-icon--helmet" />
-  <img src="public/images/tools.png" alt="" class="role-icon role-icon--tools" />
+  <img src="public/images/helmet.webp" alt="" class="role-icon role-icon--helmet" loading="lazy"/>
+  <img src="public/images/tool.webp" alt="" class="role-icon role-icon--tools" loading="lazy"/>
 </div>
         <div class="role-card__label role-card__label--vertical">
           Intern
@@ -424,9 +437,10 @@
         </div>
 
         <img
-          src="public/images/image3.png"
+          src="public/images/image3.webp"
           alt="Intern"
           class="role-card__person"
+          loading="lazy"
         />
       </div>
     </article>
@@ -460,7 +474,7 @@
             <!-- Card 1 -->
             <article class="trader-card">
             <div class="trader-card__img-wrap">
-                <img src="public/images/trader4.png" alt="Robert Fox" class="trader-card__img" />
+                <img src="public/images/trader4.webp" alt="Robert Fox" class="trader-card__img" loading="lazy"/>
             </div>
             <div class="trader-card__body">
                 <h3 class="trader-card__name">Robert Fox</h3>
@@ -471,7 +485,7 @@
             <!-- Card 2 -->
             <article class="trader-card">
             <div class="trader-card__img-wrap">
-                <img src="public/images/trader5.png" alt="Marvin McKinney" class="trader-card__img" />
+                <img src="public/images/trader5.webp" alt="Marvin McKinney" class="trader-card__img" loading="lazy" />
             </div>
             <div class="trader-card__body">
                 <h3 class="trader-card__name">Marvin McKinney</h3>
@@ -482,7 +496,7 @@
             <!-- Card 3 -->
             <article class="trader-card">
             <div class="trader-card__img-wrap">
-                <img src="public/images/trader6.png" alt="Guy Hawkins" class="trader-card__img" />
+                <img src="public/images/trader6.webp" alt="Guy Hawkins" class="trader-card__img" loading="lazy"/>
             </div>
             <div class="trader-card__body">
                 <h3 class="trader-card__name">Guy Hawkins</h3>
@@ -493,7 +507,7 @@
             <!-- Card 4 -->
             <article class="trader-card">
             <div class="trader-card__img-wrap">
-                <img src="public/images/trader5.png" alt="Jane Cooper" class="trader-card__img" />
+                <img src="public/images/trader5.webp" alt="Jane Cooper" class="trader-card__img" loading="lazy"/>
             </div>
             <div class="trader-card__body">
                 <h3 class="trader-card__name">Jane Cooper</h3>
@@ -504,7 +518,7 @@
             <!-- Card 5 -->
             <article class="trader-card">
             <div class="trader-card__img-wrap">
-                <img src="public/images/trader6.png" alt="Ronald Richards" class="trader-card__img" />
+                <img src="public/images/trader6.webp" alt="Ronald Richards" class="trader-card__img" loading="lazy" />
             </div>
             <div class="trader-card__body">
                 <h3 class="trader-card__name">Ronald Richards</h3>
@@ -556,7 +570,7 @@
       <!-- TOP ROW (3 large cards) -->
       <article class="blog-card blog-card--large">
         <div class="blog-card__image">
-          <img src="public/images/blog1.png" alt="Cozy living room" />
+          <img src="public/images/blog1.webp" alt="Cozy living room" loading="lazy" />
           <div class="blog-card__overlay">
             <h3 class="blog-card__title">Soft ambient lighting ideas</h3>
             <p class="blog-card__meta">Interior Design · London</p>
@@ -566,7 +580,7 @@
 
       <article class="blog-card blog-card--small">
         <div class="blog-card__image">
-          <img src="public/images/blog2.png" alt="Modern open office" />
+          <img src="public/images/blog2.webp" alt="Modern open office" loading="lazy" />
           <div class="blog-card__overlay">
             <h3 class="blog-card__title">Open-plan spaces that work</h3>
             <p class="blog-card__meta">Workspace · Manchester</p>
@@ -576,7 +590,7 @@
 
       <article class="blog-card blog-card--large">
         <div class="blog-card__image">
-          <img src="public/images/blog3.png" alt="Warm dining area" />
+          <img src="public/images/blog3.webp" alt="Warm dining area" loading="lazy" />
           <div class="blog-card__overlay">
             <h3 class="blog-card__title">Warm tones for dining rooms</h3>
             <p class="blog-card__meta">Home Styling · Birmingham</p>
@@ -584,10 +598,10 @@
         </div>
       </article>
 
-      <!-- BOTTOM ROW (small, large, small) -->
+      <!-- BOTTOM ROW (small, large, sall) -->
       <article class="blog-card blog-card--small">
         <div class="blog-card__image">
-          <img src="public/images/blog4.png" alt="Bathroom with blue accents" />
+          <img src="public/images/blog4.webp" alt="Bathroom with blue accents" loading="lazy" />
           <div class="blog-card__overlay">
             <h3 class="blog-card__title">Spa-like bathrooms at home</h3>
             <p class="blog-card__meta">Renovation · Bristol</p>
@@ -597,7 +611,7 @@
 
       <article class="blog-card">
   <div class="blog-card__image">
-    <img src="public/images/blog5.png" alt="Kitchen and living room" />
+    <img src="public/images/blog5.webp" alt="Kitchen and living room" loading="lazy"/>
     <div class="blog-card__overlay">
       <h3 class="blog-card__title">Viola Marble bathroom ledge</h3>
       <p class="blog-card__meta">
@@ -610,7 +624,7 @@
 
       <article class="blog-card blog-card--small">
         <div class="blog-card__image">
-          <img src="public/images/blog6.png" alt="Indoor plants and decor" />
+          <img src="public/images/blog6.webp" alt="Indoor plants and decor" loading="lazy" />
           <div class="blog-card__overlay">
             <h3 class="blog-card__title">Biophilic design with plants</h3>
             <p class="blog-card__meta">Sustainability · Leeds</p>
@@ -634,9 +648,10 @@
       <!-- logo -->
       <div class="footer__brand">
         <img
-          src="public/images/logo.png"
+          src="public/images/logo.webp"
           alt="MAI Logo"
           class="footer__logo"
+          loading="lazy"
         />
       </div>
 

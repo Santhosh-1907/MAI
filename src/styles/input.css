@@ -1,5 +1,17 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-/* your custom styles here */
+/* Your custom global styles go here */
+body {
+  @apply font-sans;
+}
+
+/* Example: header background helpers */
+.bg-header {
+  background-color: theme("colors.header-bar");
+}
+
+.bg-header-nav {
+  background-color: white;
+}

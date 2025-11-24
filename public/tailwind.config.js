@@ -1,7 +1,8 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./index.html",
-    "./src/**/*.{html,js,ts,jsx,tsx}"
+    "./public/**/*.html",        // <– important for your index.html in public
+    "./src/**/*.{js,jsx,ts,tsx}" // <– React / JS files
   ],
   theme: {
     extend: {
@@ -13,7 +14,7 @@ module.exports = {
         },
         accent: "#FFB33F",
         header: "#003A66",
-        "header-bar": "#022743",
+        "header-bar": "#022743", // <– this is the one you used
         section: "#F4F6FB"
       },
       fontFamily: {
